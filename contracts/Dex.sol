@@ -46,7 +46,7 @@ contract Dex {
     // Calculate the amount of Ether to redeem
     uint etherAmount = _amount / rate;
 
-    // Require that EthSwap has enough Ether
+    // Require that NarfexDex has enough Ether
     require(address(this).balance >= etherAmount);
 
     // Perform sale
